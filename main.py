@@ -67,12 +67,12 @@ def agent_endpoint(input_string: str):
     return response.get('output', 'Could not process the request') # Return the output key from the response
 
 
-if __name__ == "__main__":
-    # ngrok setup is typically for local development/testing,
-    # for cloud deployment you would use the cloud provider's
-    # built-in methods for exposing the application.
-    # ngrok_tunnel = ngrok.connect(8000)
-    # print("Public URL:", ngrok_tunnel.public_url)
-    # nest_asyncio.apply() # This is also for interactive environments like Colab
+# if __name__ == "__main__":
+#     # ngrok setup is typically for local development/testing,
+#     # for cloud deployment you would use the cloud provider's
+#     # built-in methods for exposing the application.
+#     # ngrok_tunnel = ngrok.connect(8000)
+#     # print("Public URL:", ngrok_tunnel.public_url)
+#     # nest_asyncio.apply() # This is also for interactive environments like Colab
 
-    uvicorn.run(app, host="0.0.0.0", port=8000) # Listen on all interfaces for cloud deployment
+#     uvicorn.run(app, host="0.0.0.0", port=8000) # Listen on all interfaces for cloud deployment
